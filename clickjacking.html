@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+  <title>Clickjacking</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script>
+  var modal = document.getElementById('id06');
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
+  var modal = document.getElementById('id07');
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
+  var modal = document.getElementById('id08');
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
+</script>
+<style>
+  *{font-family: sans-serif;
+  }
+body { background-image:url('greybg.png'); background-size: 1300px 1000px }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+p {
+margin-right: 200px;
+margin-left: 200px;
+}
+h1{
+  background-color: #2a2e2e;
+  color: white;}
+#buttonstyle3 {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    margin-left: 8px;
+  }
+
+#buttonstyle3:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  #buttonstyle4{
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px;
+      margin-right: 8px;
+    }
+
+  #buttonstyle4:hover {
+      background-color: #ddd;
+      color: black;
+    }
+.previous {
+    background-color: #f1f1f1;
+    color:black;
+    float: left;
+  }
+.next {
+    background-color: #4CAF50;
+    color: white;
+    float: right;
+  }
+
+.lightgreen {
+  background-color: #96c95f;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+#color {
+  background-color: white;
+}
+</style>
+</head>
+<body>
+  <div class="image" class="topnav" id="color"><ul>
+  <li><a class="active" href="index.html"><img src="ajeatransparent.png" height=140 width=280></a><li>
+<ul></div>
+<div class="ddosdiv"><h1><center>Clickjacking</center></h1></div>
+  <p>
+    This is a method of tricking a user into clicking a button or link. This is done by placing different layers over a link or button that the user thinks they will be routed to by clicking it.
+  </p>
+  <div class="iframe"><center><iframe width="530" height="330"
+src="https://www.youtube.com/embed/Pdc5KJfOQpI"></iframe></center>
+
+</div>
+<br>
+<div class="w3-container" class="lightgreen"> <center>  <!-- ********************************************************************** -->
+  <img src = 'https://www.imperva.com/learn/wp-content/uploads/sites/13/2019/01/Clickjacking.png'
+  width = '400' height = '400'><br><br>
+  <button onclick="document.getElementById('id06').style.display='block'" class="w3-button w3-black">Full-Size image</button>
+
+<div id="id06" class="w3-modal">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-teal">
+      <span
+  onclick = "document.getElementById('id06').style.display='none'"
+    class="w3-button w3-display-topright">&times;</span>
+    <h2>Keylogger</h2>
+    </header>
+    <div class="w3-container">
+      <img src = 'https://www.imperva.com/learn/wp-content/uploads/sites/13/2019/01/Clickjacking.png'
+      width = '730' height = '730'>
+      </div>
+
+      </div>
+      </div>
+      </div>
+
+  <p>
+    To clickjack, the attacker places an invisible element over a visible one that the user sees. The user is led to click on the visible element but instead clicks the invisible one, which leads them either to another page or runs a command that was loaded in the background.
+  </p>
+
+        <center><img src = 'https://dpsvdv74uwwos.cloudfront.net/statics/img/ogimage/Clickjacking-Attack-on-Facebook.png'
+        width = '500' height = '350'></center>
+          <center><img src = 'http://training.arrowsoftbd.com/wp-content/uploads/2015/06/Clickjacking-attack.png'
+          width = '500' height = '350'><br></center>
+
+
+  <p>
+  For example, imagine an attacker who builds a web site that has a button on it that says "click here for a free iPod". However, on top of that web page, the attacker has loaded an iframe with your mail account, and lined up exactly the "delete all messages" button directly on top of the "free iPod" button. The victim tries to click on the "free iPod" button but instead actually clicked on the invisible "delete all messages" button. In essence, the attacker has "hijacked" the user's click, hence the name "Clickjacking".
+</p>
+<p>
+Source:
+<a href="https://www.owasp.org/index.php/Clickjacking">OWASP</a>
+</p>
+<footer>
+<a href="ddos.html" class="previous" class="a" id="buttonstyle3">&laquo; Previous</a>
+<a href="facebook.html" class="next" class="a" id="buttonstyle4">Next &raquo;</a><br><br><center><img src="footerlogo.png" height=70 width=70><br>Follow me on <a href="https://www.instagram.com/l8dbrd/" target="_blank">Instagram</a><br>Published on 8/6/2019</center></footer>
+
+</body>

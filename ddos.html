@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+  <title>DDoS</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script>
+    var modal = document.getElementById('id01');
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    }
+    var modal = document.getElementById('id02');
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    }
+  </script>
+  <style>
+    *{font-family: sans-serif;
+      font-size: 18
+      px;
+    }
+h1{
+  background-color: #2a2e2e;
+  color: white;
+}
+  body { background-image:url('greybg.png'); background-size: 1000px 1000px }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: center;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  p {
+  margin-right: 200px;
+  margin-left: 200px;
+  font-size: 16px;
+  }
+  #buttonstyle1 {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    margin-left: 8px;
+  }
+
+  #buttontyle1:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  #buttonstyle2 {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 8px;
+  }
+
+  #buttontyle2:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .previous {
+    background-color: #f1f1f1;
+    color:black;
+    float:left;
+  }
+  .next {
+    background-color: #4CAF50;
+    color: white;
+    float: right;
+  }
+
+
+.zoom {
+
+  transition: transform .2s;
+
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transfrom: scale(1.5);
+  transfrom: scale(1.5);
+}
+
+#color {
+  background-color: white;
+}
+.ddosdiv {
+  margin: 0;
+  padding: 0
+}
+.active {
+  maegin: 0;
+}
+  </style>
+</head>
+
+<body>
+
+  <div class="image" class="topnav" id="color"><ul><li><a class="active" href="index.html"><img src="ajeatransparent.png" height=140 width=280></a></li></ul></div>
+<div class="ddosdiv"><h1><center>DDoS (Distributed Denial of Service)</center></h1></div>
+  <p>
+    This is a method of attacking a server or service by interrupting its normal traffic. This is done by flooding the service with traffic with bots.
+  </p>
+  <div class="w3-container"> <center>  <!-- ********************************************************************** -->
+    <img src = 'https://www.cloudflare.com/img/learning/ddos/what-is-a-ddos-attack/ntp-amplification-botnet-ddos-attack.png'
+    width = '400' height = '200'><br><br>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Full-Size image</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal">
+        <span
+    onclick = "document.getElementById('id01').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <h2>DDoS</h2>
+      </header>
+      <div class="w3-container">
+        <img src = 'https://www.cloudflare.com/img/learning/ddos/what-is-a-ddos-attack/ntp-amplification-botnet-ddos-attack.png'
+        width = '730' height = '350'>
+        </div>
+
+        </div>
+        </div>
+        </div>
+
+  <p>
+    To DDoS, an attacker has to gain control over a network of machines that are then infected with malware, turning them into bots.
+    This creates a botnet, which is controlled remotely by the attacker. The attacker needs the IP address of the victim.
+     The attacker can then send the botnet after the IP address, where they will then send requests to flood the server or network
+      to deny service to normal traffic.
+  </p>
+  <div class="w3-container"> <center>  <!-- ********************************************************************** -->
+    <img src = "https://blog.cloudflare.com/content/images/ddos-illustrations-3.png"
+    width = '400' height = '200'><br><br>
+    <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-black">Full-Size image</button>
+
+  <div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal">
+        <span
+    onclick = "document.getElementById('id02').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <h2>DDoS</h2>
+      </header>
+      <div class="w3-container">
+        <img src = "https://blog.cloudflare.com/content/images/ddos-illustrations-3.png"
+        width = '730' height = '350'>
+        </div>
+
+        </div>
+        </div>
+        </div>
+        <br><br>
+  <div class="iframe">
+    <center><iframe width="530" height="330"
+src="https://www.youtube.com/embed/NogCN78XN2w"></iframe></center>
+  <p>
+  Examples:
+  </p>
+  <p>
+  Hitting the headlines recently, is British teenager Adam Mudd, who was just 15 when he created software that lead to more than 1.7 million cyber attacks across the globe. All from the comfort of his own bedroom.
+  </p>
+  <p>
+  Not only did he successfully take down the websites of Cambridge University, Microsoft and Sony with DDoS attacks, he also sold his so-called Titanium Stresser software to criminals for a reported £386k. Mudd, now 20, was sentenced to two years in jail in April 2017.
+  </p>
+  <p>
+  It’s estimated the programme was used to hack the websites of businesses based in almost every major city, and Mudd carried out 594 attacks himself between December 2013 and March 2015. An estimated 112,000 users who purchased the software went on to hack over 666,000 IP addresses - almost 53,000 of which were in the UK.
+  </p>
+  <p>
+  Source:
+  <a href="https://www.commsworld.com/insights/blog/2017/july/how-a-16-year-old-brought-microsoft-and-sony-with-ddos-attack/" target="_blank" style="color:red">Commsworld
+  </p>
+  <footer><a href="nolist.html" class="previous" class="a" id="buttonstyle1">&laquo; Previous</a>
+  <a href="clickjacking.html" class="next" class="a" id="buttonstyle2">Next &raquo;</a><br><br>
+  <center><img src="footerlogo.png" height=70 width=70><br>Follow me on <a href="https://www.instagram.com/l8dbrd/" target="_blank">Instagram</a><br>Published on 8/6/2019</center></footer>
+
+</body>
